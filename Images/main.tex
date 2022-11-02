@@ -1,0 +1,193 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template: Project Titlepage Modified (v 0.1) by rcx
+%
+% Original Source: http://www.howtotex.com
+% Date: February 2014
+% 
+% This is a title page template which be used for articles & reports.
+% 
+% This is the modified version of the original Latex template from
+% aforementioned website.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article}
+\usepackage[a4paper]{geometry}
+\usepackage[myheadings]{fullpage}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{graphicx, wrapfig, subcaption, setspace, booktabs}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[font=small, labelfont=bf]{caption}
+\usepackage{fourier}
+\usepackage[protrusion=true, expansion=true]{microtype}
+\usepackage[french]{babel}
+\usepackage{caption}
+\usepackage{sectsty}
+\usepackage{url, lipsum}
+\usepackage{amsmath}
+
+
+
+\usepackage{tikz}
+\usepackage[most]{tcolorbox}
+\usepackage[pstricks]{bclogo}
+\usepackage{pst-blur}
+
+
+
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+\onehalfspacing
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+%-------------------------------------------------------------------------------
+% HEADER & FOOTER
+%-------------------------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\setlength\headheight{15pt}
+\fancyhead[L]{BTS CPRP 1}
+\fancyhead[R]{Lycée Le Corbusier}
+\fancyfoot[R]{Page \thepage\ sur \pageref{LastPage}}
+\fancyfoot[L]{TP - Industrialisation}
+%-------------------------------------------------------------------------------
+% TITLE PAGE
+%-------------------------------------------------------------------------------
+ 
+ 
+
+%%%%POUR FAIRE DES EXERCICES INDÉPENDAMMENT DES SECTIONS%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcounter{exo}
+\newenvironment{exo}{\stepcounter{exo}\vspace{0.5cm}{\bfseries Question \theexo\ :}}{\par\vspace{0.5cm}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\begin{document}
+ 
+\title{ \includegraphics[width=0.18\linewidth]{Images/corbu.jpg} \hspace{2cm} \normalsize \textsc{TP Industrialisation noté \hspace{2cm} \includegraphics[width=0.2\linewidth]{Images/logo.png}}
+		\\ [2.0cm]
+		\HRule{0.5pt} DOSSIER SUJET \\
+		\LARGE \textbf{\uppercase{TP2.1 Désignation des outils de production}}
+		\HRule{2pt} \\ [0.5cm]}
+\maketitle
+
+\textbf{Deux personnes par groupe}\\
+\begin{center}
+Toutes les questions seront traitées dans le documents réponse fourni
+\end{center}
+
+
+
+
+
+
+
+
+
+
+%-------------------------------------------------------------------------------
+% Section title formatting
+\sectionfont{\scshape}
+
+
+
+
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% MACHINE 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tableofcontents
+\newpage
+
+
+
+\section{Conseils pour le TP}
+  \bcinfo Comme pour tous les TPs, il est conseillé de lire toutes les pages une première fois, comme pour un sujet de BTS. Vous noterez que beaucoup d'informations sont dans les annexes (comme au BTS). Certaines définitions et figures sont "en plus". Avant de poser une question, lisez bien tout le dossier. Ne perdez pas de temps, car les TPs sont conçus pour la durée entière : 3h. En plus de comprendre et apprendre, vous devrez écrire vos réponses au propre. Il vous est fortement conseillé de vous partager le travail entre vous deux.
+
+\subsection{Matériel}
+
+Crayon, crayons de couleur, stylos, règle et vos cours sont autorisés.
+
+
+
+\section{Objectifs :}
+\begin{center}
+\textbf{Découvrir les différents outils nécessaires à la production.}\\
+\end{center}
+
+\begin{minipage}[t]{.55\linewidth}
+\textit{Compétences transversales travaillées :}
+\begin{itemize}
+    \item C11 : Définir et mettre en œuvre des essais réels et simulés
+\end{itemize}
+
+\end{minipage}
+\begin{minipage}[t]{.44\linewidth}
+\textit{Savoirs du programme travaillées :}
+\begin{itemize}
+    \item S5.3 – Conception des outils et porte-outils;
+    \item S5.3.3 – Outils;
+    \item S7.2.2 – Enlèvement de matière par cisaillement;
+    \item S8.1.1 – Élaboration d’avant-projets (outillages retenus);
+    \item S8.2 – Paramètres de génération des entités.
+\end{itemize}
+\end{minipage}
+
+\section{Comment choisir les bons outils}
+On part du dessin de def et on imagine
+ça depent de ce qu'on a a faire
+Le sqoutil peuvent donner des formes différentes selon leur forme 
+
+\section{Quelles sont les différentes opérations d'usinage}
+
+\section{Désignation des outils}
+\subsection{Les outils en tournage}
+\subsection{Les outils en fraisage}
+
+
+\begin{exo}\label{exo1} En vous aidant de la Figurindiquez d'où viennent les ordres de déplacement des machines outils.\end{exo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=red!75!black]
+  \bcinfo szldkjfvhspdjfnmzekjfnmlsqdkjfnmlskdjfnlksmqdjf
+\end{tcolorbox}
+
+
+\section{ANNEXE}
+\begin{tcolorbox}[colback=blue!5!white,colframe=orange!75!black]
+\begin{center}
+    \textbf{Glossaire :}
+\end{center}
+\begin{itemize}
+    \item CNC : Computer Numerical Control (Commande numérique par calculateur);
+    \item MOCN : Machine Outil à commande numérique, elle est programmable et équipé d'une "commande numérique par calculateur" (CNC). Elle est en général dédiée à des fabrication variées de pièces différentes, lancées en petits lots répétitifs.
+    \item CU : Centre d'usinage : En fait, c'est une MOCN qui est complétée d'autres équipement périphériques qui assurent notamment : \begin{itemize}
+        \item le changement automatique d'outils stockés dans des magasins d'outils;
+        \item le changement automatique de pièce (palettisation)
+        \item éventuellement le convoyage des copeaux (convoyeur)
+    \end{itemize}
+    Il est dédié à des fabrications variées de pièces différentes.
+    \item CAO : Conception Assistée par Ordinateur;
+    \item FAO : Fabrication Assistée par Ordinateur.
+\end{itemize}
+\end{tcolorbox}
+
+
+
+
+
+\end{document}
+
