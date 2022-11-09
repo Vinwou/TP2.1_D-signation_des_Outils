@@ -28,6 +28,7 @@
 \usepackage{url, lipsum}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{enumerate}
 
 
 
@@ -148,65 +149,7 @@ Ne répondre que sur le document réponse.\\
 \end{itemize}
 \end{minipage}
 
-\section{Comment choisir les bons outils}
-
-
-\begin{exo} Quelle est la première donnée dont nous partons toujours pour commencer notre conception de processus ?\end{exo}
-
-\begin{exo} A partir de la pièce de la Figure \ref{bride}, indiquez la matière, la quantité et le type de norme utilisé (Européenne, américaine).\end{exo}
-
-
-
-
-
-\begin{exo} A partir de la pièce de la Figure \ref{bride}, décrypter la spécification GPS ci-dessous. Indiquez quelle est la surface spécifié \end{exo}
-\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
-
-\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
-%uncomment if require: \path (0,54); %set diagram left start at 0, and has height of 54
-
-%Shape: Rectangle [id:dp983962347358075] 
-\draw   (11.33,10.17) -- (185.83,10.17) -- (185.83,40.17) -- (11.33,40.17) -- cycle ;
-%Straight Lines [id:da8258543386786161] 
-\draw    (48.83,10.17) -- (48.83,40.17) ;
-%Straight Lines [id:da13739336078997266] 
-\draw    (153.83,10.17) -- (153.83,40.17) ;
-%Straight Lines [id:da7633440732860972] 
-\draw    (123.5,10.17) -- (123.5,40.17) ;
-%Shape: Ellipse [id:dp3921393013985519] 
-\draw  [line width=1.5]  (22.98,25.25) .. controls (22.98,21.65) and (25.89,18.74) .. (29.48,18.74) .. controls (33.07,18.74) and (35.98,21.65) .. (35.98,25.25) .. controls (35.98,28.84) and (33.07,31.75) .. (29.48,31.75) .. controls (25.89,31.75) and (22.98,28.84) .. (22.98,25.25) -- cycle ;
-%Straight Lines [id:da37230096848119776] 
-\draw [line width=1.5]    (29.48,14.67) -- (29.48,36) ;
-%Straight Lines [id:da3748131268075474] 
-\draw [line width=1.5]    (39.8,25.25) -- (19.33,25.25) ;
-
-
-
-% Text Node
-\draw (55.67,15.17) node [anchor=north west][inner sep=0.75pt]   [align=left] {$\varnothing$ 0,02};
-% Text Node
-\draw (132.33,16.67) node [anchor=north west][inner sep=0.75pt]   [align=left] {A};
-% Text Node
-\draw (163.33,16.67) node [anchor=north west][inner sep=0.75pt]   [align=left] {B};
-
-
-\end{tikzpicture}
-\textbf{METTRE LES DIFFERENT SYMBOLE DANS LE DOC REPONSE}
-
-
-
-\section{Quelles sont les différentes opérations d'usinage}
-
-
-Pour comprendre quelles sont les différentes opérations d'usinage, il nous faut appréhender comment les outils enlèvent de la matière à la pièce usiné.
-
-
-\begin{minipage}[t]{.55\linewidth}
-\includegraphics[width=0.5\linewidth]{Images/C1.JPG}
-\end{minipage}
-\begin{minipage}[t]{.44\linewidth}
-\includegraphics[width=0.7\linewidth]{Images/C2.JPG}
-\end{minipage}
+\section{Introduction générale}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -306,8 +249,67 @@ En fonction des surfaces à générer sur la pièce voulue\end{minipage}};
 \end{tikzpicture}
 \end{center}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{exo} \textbf{VRAI ou FAUX} (Les réponses s'écrivent toujours sur le document réponse)\end{exo} 
+\begin{enumerate}[1)]
+    \item En production par enlèvement de matière, le brut à toujours un volume plus faible que la pièce finale.
+    \item Si besoin il y a, une pièce peut passer en phase 10 sur un Tour, mais on ne pourra pas l'usiner ensuite sur une fraiseuse.
+    \item Si besoin il y a, une pièce peut passer en phase 10 sur un fraiseuse, et on pourra sans problème l'usiner ensuite sur un Tour. 
+    \item On ne peut pas réaliser de sphère avec une fraiseuse.
+    \item Sur un Tour, l'axe qui sert à commander incrémentalement la rotation est appelé axe $\Vec{C}$.
+    \item Lorsqu'on change la position de la pièce lors de son processus de fabrication on change alors de sous-phase.
+    \item Le DEC est le vecteur entre l'Origine Porte Pièce et l'Origine Pièce.
+    \item Si on réalise un grand lot de pièce, les valeurs du PREF et du DEC ne devraient pas changer entre chaque pièce.
+    \item Selon la norme AFNOR NF Z 60-020, sur une MOCN, l'axe $\Vec{X}$ est toujours l'axe parallèle à la broche.
+    \item Une mauvaise programmation est dangereuse, en cas de collision à l'intérieur de la machine, le seul moyen de couper le fonctionnement est le bouton d'arrêt d'urgence\footnote{Il est généralement désigné par la dénomination ARU (pour arrêt d'urgence) ou BAU (bouton d'arrêt d'urgence)}.
+\end{enumerate}
+
+
+\begin{exo} Quelle est la première donnée d'entrée dont nous partons toujours pour commencer notre conception de processus ?\end{exo}
+
+\begin{exo} A partir de la pièce de la Figure \ref{bride}, indiquez la matière, la quantité et le type de norme utilisé (Européenne, américaine).\end{exo}
+
+
+
+
+
+\begin{exo} A partir de la pièce de la Figure \ref{bride}, et d'après vos recherche, quel est le type de traitement utilisé sur la pièce, et quel est son intérêt ? \end{exo}
+
+
+
+\section{Quelles sont les différentes opérations d'usinage}
+\subsection{Génération de surfaces}
+On s'intéresse ici aux surfaces que génèrent les outils sur la pièce. Des outils différents peuvent générer les mêmes surfaces. Les mêmes outils peuvent générer des surfaces différentes en fonction de leur utilisation/programmation sur la machine. La génération des surfaces est exécutée selon une génératrice \footnote{En mathématiques, une génératrice est une figure ou une ligne dont le déplacement engendre une surface. Ces surfaces peuvent être par exemple des surfaces réglées ou de révolution. Plus concrètement, en production la génératrice sera l'arête de l’outil. Voir Figure \ref{directrice} pour plus d'information} et une directrice\footnote{voir figure \ref{directrice} }.
+
+\begin{exo} Quelle est la génératrice qui engendre un \textbf{cylindre} ? Quel est l'\textbf{axe de rotation} pour l'engendrer ? Vous ferez un schéma pour expliquez votre solution.\end{exo}
+
+\begin{exo} Quelle est la génératrice qui engendre un \textbf{cône} ? Quel est l'\textbf{axe de rotation} pour l'engendrer ? Vous ferez un schéma pour expliquez votre solution.\end{exo}
+
+
+Pour comprendre quelles sont les différentes opérations d'usinage, il nous faut appréhender comment les outils enlèvent de la matière à la pièce usiné.
+
+
+\begin{minipage}[t]{.55\linewidth}
+\includegraphics[width=0.5\linewidth]{Images/C1.JPG}
+\end{minipage}
+\begin{minipage}[t]{.44\linewidth}
+\includegraphics[width=0.7\linewidth]{Images/C2.JPG}
+\end{minipage}
+
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=red!75!black]
+  \bcinfo Les livres de production sont à votre disposition dans l'atelier
+\end{tcolorbox}
+
+
+\subsection{Tournage}
+\begin{exo} Complétez le tableau d'opération d'usinage en tournage sur le document réponse. Vous devrez renseigner le ou les noms des opérations, la ou les formes/surfaces engendrées et enfin le ou les noms complets des outils.  \end{exo}
+
+\subsection{Fraisage}
+\begin{exo} Complétez le tableau d'opération d'usinage en fraisage sur le document réponse. Vous devrez renseigner le ou les noms des opérations, la ou les formes/surfaces engendrées et enfin le ou les noms complet des outils.  \end{exo}
+
+
+
 
 
 
@@ -362,6 +364,14 @@ En fonction des surfaces à générer sur la pièce voulue\end{minipage}};
 \includegraphics[width=0.9\linewidth]{Images/gps.JPG}
 \caption{Aide mémoire pour spécification géométrique}
 \label{gps}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.9\linewidth]{Images/directrice.png}
+\caption{Directrice : Ligne simple fermée sur laquelle s’appuie une droite mobile, appelée génératrice, en engendrant une surface. La génératrice engendre une surface conique, si cette directrice est une ligne courbe fermée (dessin en bas à gauche), ou bien, engendre une surface pyramidale, si cette directrice est un polygone (dessin en bas à droite).}
+\label{directrice}
 \end{figure}
 
 
